@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지를 클릭해보세요</title>
+</head>
+<body>
+    <h4>이미지를 클릭해보세요</h4><hr>
+    <img id="rotateImage" src="./media/photo1.png", onclick="rotate()">
+    <script>
+        let deg = 0;
+
+        function rotate() {
+            let image = document.getElementById("rotateImage");
+            deg = deg + 30;
+            image.style.transform = "rotate(" + deg + "deg)";
+        }
+    </script>
+</body>
+</html>
