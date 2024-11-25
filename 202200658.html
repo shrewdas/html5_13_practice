@@ -10,10 +10,10 @@
     <img id="rotateImage" src="./media/photo1.png", onclick="rotate()">
     <script>
         let deg = 0;
-        let image = document.getElementById("rotateImage");
 
         function rotate() {
-            deg = deg = 30;
+            let image = document.getElementById("rotateImage");
+            deg = deg + 30;
             image.style.transform = "rotate(" + deg + "deg)";
         }
     </script>
