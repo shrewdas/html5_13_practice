@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function frult (name) {
+            this.name = name;
+            this.intro = function () {
+                document.write("My name: " + this.name + "<hr>");    
+            }
+}
+        let frult1 = new frult("apple");
+        let frult2 = new frult("banana");
+        frult1.intro();
+        frult2.intro();
+    </script>
+</body>
+</html>
