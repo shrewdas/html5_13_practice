@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="followMouse" src="./media/12.png">
+    <script>
+        let image = document.getElementById("followMouse");
+        document.onmousemove = updateImage;
+
+        function updateImage(event) {
+            const X = event.clientX;
+            const Y = event.clientY;
+            image.style.transform = 'translate(${X}px, ${Y}px)';
+        }
+    </script>
+</body>
+</html>
